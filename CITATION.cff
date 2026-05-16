@@ -18,3 +18,5 @@ authors:
 repository-code: https://github.com/argosopentech/argos-translate
 url: https://www.argosopentech.com
 license: MIT
+# Note: This is a personal fork for learning purposes.
+# Original project: https://github.com/argosopentech/argos-translate
