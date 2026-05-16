@@ -20,6 +20,10 @@ Example usage::
         "Hello, world!", "en", "es"
     )
     print(translated_text)  # "¡Hola, mundo!"
+
+Notes (personal fork):
+    - Forked for personal learning/experimentation.
+    - See https://github.com/argosopentech/argos-translate for upstream.
 """
 
 __version__ = "2.0.0"
