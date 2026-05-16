@@ -20,3 +20,5 @@ url: https://www.argosopentech.com
 license: MIT
 # Note: This is a personal fork for learning purposes.
 # Original project: https://github.com/argosopentech/argos-translate
+# Forked to experiment with adding support for additional language pairs
+# and exploring the CTranslate2 backend integration.
