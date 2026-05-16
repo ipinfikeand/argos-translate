@@ -15,3 +15,6 @@ authors:
   - given-names: Contributors
     family-names: Argos Translate
     email: admin@argosopentech.com
+repository-code: https://github.com/argosopentech/argos-translate
+url: https://www.argosopentech.com
+license: MIT
