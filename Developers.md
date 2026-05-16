@@ -21,3 +21,7 @@ The unit tests in the master branch are deprecated but improved unit tests are b
 ```
 ./scripts/format.sh
 ```
+
+## Notes (personal)
+- Remember to activate the virtualenv before running tests: `source venv/bin/activate`
+- Language packages are downloaded to `~/.local/share/argos-translate/packages` by default
