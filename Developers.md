@@ -11,6 +11,11 @@ pytest tests
 pytest tests/test_translate.py -v
 ```
 
+## Running tests with verbose output and stopping on first failure
+```
+pytest tests -v -x
+```
+
 ## Formatting
 The unit tests in the master branch are deprecated but improved unit tests are being developed in the "v2" branch.
 ```
