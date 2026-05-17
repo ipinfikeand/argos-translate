@@ -27,3 +27,5 @@ The unit tests in the master branch are deprecated but improved unit tests are b
 - Language packages are downloaded to `~/.local/share/argos-translate/packages` by default
 - To list installed packages from Python: `argostranslate.package.get_installed_packages()`
 - Useful for debugging: set `ARGOS_TRANSLATE_VERBOSE=1` env var to get more logging output
+- To update all installed packages at once: `argostranslate.package.update_package_index()` then reinstall
+- Run `pytest tests -v -x 2>&1 | tee test_output.log` to save test output to a file for review
