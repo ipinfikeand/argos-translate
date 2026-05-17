@@ -70,7 +70,8 @@ package_index_url: str = os.environ.get(
 verify_ssl: bool = os.environ.get("ARGOS_TRANSLATE_VERIFY_SSL", "true").lower() != "false"
 
 # Request timeout in seconds for network operations
-request_timeout: int = int(os.environ.get("ARGOS_TRANSLATE_REQUEST_TIMEOUT", "30"))
+# Increased from 30 to 60 — the default was too short on my slow connection
+request_timeout: int = int(os.environ.get("ARGOS_TRANSLATE_REQUEST_TIMEOUT", "60"))
 
 # Whether to use GPU acceleration if available (requires CTranslate2 with CUDA)
 device: str = os.environ.get("ARGOS_TRANSLATE_DEVICE", "auto")
