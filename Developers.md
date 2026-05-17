@@ -25,3 +25,5 @@ The unit tests in the master branch are deprecated but improved unit tests are b
 ## Notes (personal)
 - Remember to activate the virtualenv before running tests: `source venv/bin/activate`
 - Language packages are downloaded to `~/.local/share/argos-translate/packages` by default
+- To list installed packages from Python: `argostranslate.package.get_installed_packages()`
+- Useful for debugging: set `ARGOS_TRANSLATE_VERBOSE=1` env var to get more logging output
