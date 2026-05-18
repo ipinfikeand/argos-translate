@@ -77,12 +77,14 @@ request_timeout: int = int(os.environ.get("ARGOS_TRANSLATE_REQUEST_TIMEOUT", "60
 device: str = os.environ.get("ARGOS_TRANSLATE_DEVICE", "auto")
 
 # Inter-sentence delimiter used when splitting text for translation
+# Bumped up from 1500 — I often translate longer paragraphs and was seeing
+# awkward mid-sentence splits that hurt translation quality.
 sentence_split_max_chars: int = int(
-    os.environ.get("ARGOS_TRANSLATE_SENTENCE_SPLIT_MAX_CHARS", "1500")
+    os.environ.get("ARGOS_TRANSLATE_SENTENCE_SPLIT_MAX_CHARS", "3000")
 )
 
 
 def ensure_dirs() -> None:
     """Create required application directories if they do not exist."""
     for directory in (package_data_dir, downloads_dir, cache_dir):
-        directory.mkdir(parents=True, exist_ok=True)
+        directory.mkdir(parents=True
